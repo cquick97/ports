@@ -130,6 +130,7 @@
     SUBDIR += mygui-ogre
     SUBDIR += mygui-opengl
     SUBDIR += neXtaw
+    SUBDIR += ntk
     SUBDIR += nucleo
     SUBDIR += ocaml-lablgtk2
     SUBDIR += ocaml-labltk
@@ -267,7 +268,6 @@
     SUBDIR += tile
     SUBDIR += tix
     SUBDIR += tk-wrapper
-    SUBDIR += tk84
     SUBDIR += tk85
     SUBDIR += tk86
     SUBDIR += tk87

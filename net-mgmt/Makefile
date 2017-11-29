@@ -88,8 +88,10 @@
     SUBDIR += icingaweb2-module-businessprocess
     SUBDIR += icingaweb2-module-cube
     SUBDIR += icingaweb2-module-director
+    SUBDIR += icingaweb2-module-elasticsearch
     SUBDIR += icingaweb2-module-generictts
     SUBDIR += icingaweb2-module-grafana
+    SUBDIR += icingaweb2-module-graphite
     SUBDIR += icingaweb2-module-map
     SUBDIR += icingaweb2-module-vsphere
     SUBDIR += icli
@@ -120,6 +122,7 @@
     SUBDIR += libsmi
     SUBDIR += lldpd
     SUBDIR += mbrowse
+    SUBDIR += mdata-client
     SUBDIR += mk-livestatus
     SUBDIR += monitoring-plugins
     SUBDIR += mrtg
@@ -185,7 +188,6 @@
     SUBDIR += netmask
     SUBDIR += netspoc
     SUBDIR += netustad
-    SUBDIR += netwag
     SUBDIR += networkmgr
     SUBDIR += netwox
     SUBDIR += netxms
@@ -282,6 +284,7 @@
     SUBDIR += php56-snmp
     SUBDIR += php70-snmp
     SUBDIR += php71-snmp
+    SUBDIR += php72-snmp
     SUBDIR += phpip
     SUBDIR += phpipam
     SUBDIR += phpweathermap
@@ -360,6 +363,7 @@
     SUBDIR += telegraf
     SUBDIR += tornova
     SUBDIR += torrus
+    SUBDIR += triton-guesttools
     SUBDIR += unbound_exporter
     SUBDIR += unifi5
     SUBDIR += victorops-nagios

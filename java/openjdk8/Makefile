@@ -29,7 +29,8 @@ PATCHFILES=	patch-8u05-b13.xz \
 		patch-8u112-b16.xz \
 		patch-8u121-b13.xz \
 		patch-8u131-b11.xz \
-		patch-8u144-b01.xz
+		patch-8u144-b01.xz \
+		patch-8u152-b16.xz
 
 MAINTAINER=	java@FreeBSD.org
 COMMENT?=	Java Development Kit ${JDK_MAJOR_VERSION}
@@ -53,7 +54,7 @@ USE_AUTOTOOLS=	autoconf
 BUILD_DEPENDS+=	${UNZIP_CMD}:archivers/unzip
 .endif
 
-ONLY_FOR_ARCHS=	amd64 armv6 armv7 i386 powerpc powerpc64
+ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386 powerpc powerpc64
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 DOS2UNIX_FILES= jdk/src/bsd/doc/man/appletviewer.1 \
@@ -204,8 +205,8 @@ NO_CCACHE=		yes
 NOPRECIOUSMAKEVARS=	yes
 
 JDK_MAJOR_VERSION=	8
-JDK_UPDATE_VERSION=	144
-JDK_BUILD_NUMBER=	01
+JDK_UPDATE_VERSION=	152
+JDK_BUILD_NUMBER=	16
 DIST_BUILD_NUMBER=	132
 JTREG_VERSION=		4.1
 JTREG_BUILD_NUMBER=	b08
@@ -307,6 +308,8 @@ TOOLS_DIR+=	${${t}:S|/${BUILD_${t}}$||}
 CONFIGURE_ARGS+=	--with-tools-dir="${TOOLS_DIR:u:S/ /:/g}"
 .endif
 
+.include <bsd.port.pre.mk>
+
 BOOTSTRAP_JDKS=	${LOCALBASE}/openjdk8 \
 		${LOCALBASE}/openjdk7 \
 		${LOCALBASE}/bootstrap-openjdk8
@@ -323,8 +326,6 @@ BOOTSTRAPJDKDIR=	${BJDK}
 BOOTSTRAPJDKDIR?=	${LOCALBASE}/bootstrap-openjdk8
 BUILD_DEPENDS+=		${BOOTSTRAPJDKDIR}/bin/javac:java/bootstrap-openjdk8
 .endif
-
-.include <bsd.port.pre.mk>
 
 .if ${ARCH} == armv6 || ${ARCH} == armv7 || ${ARCH} == i386
 # XXX We must limit max heap size for 32-bit targets.

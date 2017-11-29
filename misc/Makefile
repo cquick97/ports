@@ -39,6 +39,7 @@
     SUBDIR += chord2html
     SUBDIR += cinnamon-translations
     SUBDIR += clex
+    SUBDIR += cldr-emoji-annotation
     SUBDIR += cloc
     SUBDIR += clpbar
     SUBDIR += cmatrix
@@ -96,10 +97,12 @@
     SUBDIR += fortune-mod-bible
     SUBDIR += fortune-mod-bofh
     SUBDIR += fortune-mod-epictetus
+    SUBDIR += fortune-mod-freebsd-classic
     SUBDIR += fortune-mod-futurama
     SUBDIR += fortune-mod-psalms
     SUBDIR += fortuneit
     SUBDIR += fpc-chm
+    SUBDIR += free42
     SUBDIR += freebsd-doc-all
     SUBDIR += freebsd-doc-bn
     SUBDIR += freebsd-doc-da
@@ -285,6 +288,7 @@
     SUBDIR += osinfo-db
     SUBDIR += ossp-uuid
     SUBDIR += otter
+    SUBDIR += owrep
     SUBDIR += p5-Acme-ButFirst
     SUBDIR += p5-Array-Compare
     SUBDIR += p5-Array-Diff
@@ -362,6 +366,7 @@
     SUBDIR += php56-calendar
     SUBDIR += php70-calendar
     SUBDIR += php71-calendar
+    SUBDIR += php72-calendar
     SUBDIR += phraze
     SUBDIR += pinfo
     SUBDIR += pipe
@@ -372,6 +377,7 @@
     SUBDIR += ptsort
     SUBDIR += py-YABT
     SUBDIR += py-cinder
+    SUBDIR += py-colorbrewer
     SUBDIR += py-crudini
     SUBDIR += py-fuzzy
     SUBDIR += py-glance
@@ -475,6 +481,7 @@
     SUBDIR += umodunpack
     SUBDIR += unclutter
     SUBDIR += unclutter-xfixes
+    SUBDIR += unicode-emoji
     SUBDIR += upclient
     SUBDIR += us-zipcodes
     SUBDIR += usbids

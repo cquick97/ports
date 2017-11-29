@@ -103,7 +103,6 @@
     SUBDIR += blokish
     SUBDIR += bloodfrontier
     SUBDIR += bluemoon
-    SUBDIR += bogged
     SUBDIR += bomber
     SUBDIR += bomberclone
     SUBDIR += bomberinstinct
@@ -432,7 +431,6 @@
     SUBDIR += icbm3d
     SUBDIR += icebreaker
     SUBDIR += iceicepenguin
-    SUBDIR += ifm
     SUBDIR += imaze
     SUBDIR += impossible_mission_puzzle
     SUBDIR += inform
@@ -576,7 +574,6 @@
     SUBDIR += lmarbles
     SUBDIR += lmpc
     SUBDIR += lolcat
-    SUBDIR += lordsawar
     SUBDIR += lpairs
     SUBDIR += lskat
     SUBDIR += ltris
@@ -694,6 +691,7 @@
     SUBDIR += openbor4432
     SUBDIR += openbubbles
     SUBDIR += opencity
+    SUBDIR += openclaw
     SUBDIR += openclonk
     SUBDIR += opengfx
     SUBDIR += openglad
@@ -956,6 +954,7 @@
     SUBDIR += syobon
     SUBDIR += tads
     SUBDIR += taipan
+    SUBDIR += taisei
     SUBDIR += tali
     SUBDIR += tanglet
     SUBDIR += tanks-of-freedom
@@ -978,7 +977,6 @@
     SUBDIR += timeseal
     SUBDIR += tinymux
     SUBDIR += tkmoo
-    SUBDIR += tksol
     SUBDIR += tomatoes
     SUBDIR += tome4
     SUBDIR += tomenet
@@ -1001,8 +999,8 @@
     SUBDIR += trophy
     SUBDIR += tsito
     SUBDIR += tt
-    SUBDIR += ttraffic
     SUBDIR += ttt
+    SUBDIR += tty-solitaire
     SUBDIR += tux-aqfh
     SUBDIR += tuxfighter
     SUBDIR += tuxkart
@@ -1153,6 +1151,7 @@
     SUBDIR += xpilot-ng-server
     SUBDIR += xpipeman
     SUBDIR += xpired
+    SUBDIR += xptools
     SUBDIR += xpuyopuyo
     SUBDIR += xpuzzletama
     SUBDIR += xpyraminx

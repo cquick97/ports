@@ -3,13 +3,12 @@
 
 PORTNAME=	seamonkey
 DISTVERSION=	2.49.1
-PORTREVISION=	3
+PORTREVISION=	7
 MOZILLA_VER=	52 # above + 3
 CATEGORIES?=	www mail news editors irc ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
 		MOZILLA/${PORTNAME}/candidates/${DISTVERSION}-candidates/build4/source
-DISTFILES=	${PORTNAME}-${DISTVERSION}.source${EXTRACT_SUFX}
-EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}.source${EXTRACT_SUFX}
+DISTFILES=	${DISTNAME}.source${EXTRACT_SUFX}
 
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	The open source, standards compliant web browser
@@ -49,14 +48,13 @@ USE_HARDENING=	pie:off relro:off
 OPTIONS_DEFINE=	LDAP LIGHTNING RUST
 OPTIONS_SINGLE=	TOOLKIT
 OPTIONS_SINGLE_TOOLKIT=	GTK2 GTK3
-OPTIONS_DEFAULT=CANBERRA GTK2 LDAP LIGHTNING
+OPTIONS_DEFAULT=CANBERRA GTK3 LDAP LIGHTNING
 
 LDAP_DESC?=	LDAP support for Mailnews
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 .include <bsd.port.options.mk>
 
-WRKSRC:=	${WRKDIR}/${PORTNAME}-${DISTVERSION}
 MOZSRC:=	${WRKSRC}/mozilla
 
 .if ! ${PORT_OPTIONS:MLDAP}
